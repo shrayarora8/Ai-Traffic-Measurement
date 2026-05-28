@@ -1,0 +1,15 @@
+# AI Service Traffic Measurement — Python Dependencies
+#
+# Install with: pip install -r requirements.txt
+#
+# Note: The collector also needs system tools (dig, traceroute) which are
+# installed via your OS package manager, not pip. On macOS these are
+# pre-installed. On Ubuntu: sudo apt install dnsutils traceroute
+
+# --- Analysis Phase ---
+geoip2>=4.0.0          # MaxMind GeoLite2 library: maps IP addresses → countries/ASNs
+matplotlib>=3.7.0      # Plotting charts for the paper
+pandas>=2.0.0          # Data manipulation for analysis tables
+
+# --- Data Collection Phase ---
+requests>=2.31.0       # HTTP requests (used to verify VPN connection via ipify.org)

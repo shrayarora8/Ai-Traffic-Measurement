@@ -1,0 +1,174 @@
+{
+  "timestamp": "2026-05-28T07:36:53.291869+00:00",
+  "target_label": "google",
+  "target_domain": "generativelanguage.googleapis.com",
+  "source_machine": "Shrays-MacBook-Air.local",
+  "vpn_provider": null,
+  "vpn_region": null,
+  "dns": {
+    "domain": "generativelanguage.googleapis.com",
+    "ips": [
+      "142.251.218.106",
+      "142.251.218.138",
+      "142.251.214.42",
+      "142.251.218.234",
+      "142.251.218.170",
+      "142.251.219.170",
+      "142.251.219.42",
+      "142.251.218.202",
+      "142.251.219.138",
+      "142.251.219.10",
+      "142.251.218.74"
+    ],
+    "error": null
+  },
+  "traceroute": {
+    "domain": "generativelanguage.googleapis.com",
+    "hops": [
+      {
+        "hop_num": 1,
+        "ip": "10.20.174.1",
+        "hostname": null,
+        "rtt_ms": 3.357
+      },
+      {
+        "hop_num": 2,
+        "ip": "50.218.200.57",
+        "hostname": "xg-1-1-48-3984-soag01.davis.ca.ccal.comcast.net",
+        "rtt_ms": 3.422
+      },
+      {
+        "hop_num": 3,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": null
+      },
+      {
+        "hop_num": 4,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": null
+      },
+      {
+        "hop_num": 5,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": null
+      },
+      {
+        "hop_num": 6,
+        "ip": "96.217.70.37",
+        "hostname": "ae-287-ar01.sacramento.ca.ccal.comcast.net",
+        "rtt_ms": 9.319
+      },
+      {
+        "hop_num": 7,
+        "ip": "96.216.129.193",
+        "hostname": "be-501-arsc1.sacramento.ca.ccal.comcast.net",
+        "rtt_ms": 7.408
+      },
+      {
+        "hop_num": 8,
+        "ip": "96.110.41.105",
+        "hostname": "be-36431-cs03.sunnyvale.ca.ibone.comcast.net",
+        "rtt_ms": 8.228
+      },
+      {
+        "hop_num": 9,
+        "ip": "96.110.46.6",
+        "hostname": "be-1112-cr12.sunnyvale.ca.ibone.comcast.net",
+        "rtt_ms": 8.233
+      },
+      {
+        "hop_num": 10,
+        "ip": "96.110.37.170",
+        "hostname": "be-301-cr12.9greatoaks.ca.ibone.comcast.net",
+        "rtt_ms": 8.201
+      },
+      {
+        "hop_num": 11,
+        "ip": "96.110.32.254",
+        "hostname": "be-2411-pe11.9greatoaks.ca.ibone.comcast.net",
+        "rtt_ms": 8.001
+      },
+      {
+        "hop_num": 12,
+        "ip": "96.110.32.246",
+        "hostname": "be-2211-pe11.9greatoaks.ca.ibone.comcast.net",
+        "rtt_ms": 8.019
+      },
+      {
+        "hop_num": 13,
+        "ip": "142.250.230.191",
+        "hostname": null,
+        "rtt_ms": 8.858
+      },
+      {
+        "hop_num": 14,
+        "ip": "142.251.224.33",
+        "hostname": null,
+        "rtt_ms": 7.773
+      },
+      {
+        "hop_num": 15,
+        "ip": "209.85.243.112",
+        "hostname": null,
+        "rtt_ms": 9.128
+      },
+      {
+        "hop_num": 16,
+        "ip": "142.251.218.138",
+        "hostname": "qro04s06-in-f10.1e100.net",
+        "rtt_ms": 8.866
+      }
+    ],
+    "reached_destination": false,
+    "error": null
+  },
+  "tcp_rtt": {
+    "host": "142.251.218.106",
+    "port": 443,
+    "rtt_ms": 8.059,
+    "all_rtts_ms": [
+      8.059,
+      8.125,
+      8.124
+    ],
+    "error": null
+  },
+  "tls_cert": {
+    "domain": "generativelanguage.googleapis.com",
+    "subject": {
+      "commonName": "upload.video.google.com"
+    },
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Google Trust Services",
+      "commonName": "WR2"
+    },
+    "san": [
+      "upload.video.google.com",
+      "*.clients.google.com",
+      "*.docs.google.com",
+      "*.drive.google.com",
+      "*.gdata.youtube.com",
+      "*.googleapis.com",
+      "*.photos.google.com",
+      "*.youtube-3rd-party.com",
+      "upload.google.com",
+      "*.upload.google.com",
+      "upload.youtube.com",
+      "*.upload.youtube.com",
+      "uploads.stage.gdata.youtube.com",
+      "bg-call-donation.goog",
+      "bg-call-donation-alpha.goog",
+      "bg-call-donation-canary.goog",
+      "bg-call-donation-dev.goog"
+    ],
+    "not_before": "May  7 15:53:08 2026 GMT",
+    "not_after": "Jul 30 15:53:07 2026 GMT",
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "error": null
+  }
+}
