@@ -1,0 +1,106 @@
+{
+  "measurement_id": "176fea3e-880c-4f6b-8a03-36fe61e155c3",
+  "timestamp": "2026-06-03T07:50:28.079862+00:00",
+  "target_label": "anthropic",
+  "target_domain": "api.anthropic.com",
+  "source_machine": "Chunhua",
+  "source_platform": "Windows-10-10.0.19045-SP0",
+  "origin_type": "vpn",
+  "vpn_provider": "protonvpn",
+  "vpn_region": "kr",
+  "campaign_id": "20260603T073955Z_kr_protonvpn",
+  "round_id": "20260603T073955Z_kr_protonvpn-round-0017",
+  "notes": "fast ProtonVPN South Korea collection",
+  "source_public_ip": {
+    "ip": "79.110.55.14",
+    "error": null
+  },
+  "dns": {
+    "domain": "api.anthropic.com",
+    "ips": [
+      "160.79.104.10"
+    ],
+    "method": "socket.getaddrinfo",
+    "error": null
+  },
+  "traceroute": {
+    "domain": "api.anthropic.com",
+    "command": "tracert -d -h 12 -w 1000 api.anthropic.com",
+    "hops": [
+      {
+        "hop_num": 1,
+        "ip": "10.2.0.1",
+        "hostname": null,
+        "rtt_ms": 120.0
+      },
+      {
+        "hop_num": 2,
+        "ip": "79.110.55.1",
+        "hostname": null,
+        "rtt_ms": 140.0
+      },
+      {
+        "hop_num": 3,
+        "ip": "146.70.4.73",
+        "hostname": null,
+        "rtt_ms": 122.0
+      },
+      {
+        "hop_num": 4,
+        "ip": "37.120.220.122",
+        "hostname": null,
+        "rtt_ms": 117.0
+      },
+      {
+        "hop_num": 5,
+        "ip": "210.171.224.134",
+        "hostname": null,
+        "rtt_ms": 127.0
+      },
+      {
+        "hop_num": 6,
+        "ip": "103.22.201.119",
+        "hostname": null,
+        "rtt_ms": 122.0
+      },
+      {
+        "hop_num": 7,
+        "ip": "160.79.104.10",
+        "hostname": null,
+        "rtt_ms": 119.0
+      }
+    ],
+    "reached_destination": true,
+    "error": null
+  },
+  "tcp_rtt": {
+    "host": "160.79.104.10",
+    "port": 443,
+    "rtt_ms": 118.716,
+    "all_rtts_ms": [
+      127.252,
+      118.716,
+      120.566
+    ],
+    "error": null
+  },
+  "tls_cert": {
+    "domain": "api.anthropic.com",
+    "subject": {
+      "commonName": "api.anthropic.com"
+    },
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Google Trust Services",
+      "commonName": "WE1"
+    },
+    "san": [
+      "api.anthropic.com"
+    ],
+    "not_before": "May 26 17:45:54 2026 GMT",
+    "not_after": "Aug 24 18:45:51 2026 GMT",
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "error": null
+  }
+}

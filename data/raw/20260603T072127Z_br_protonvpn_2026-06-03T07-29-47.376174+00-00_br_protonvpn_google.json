@@ -1,0 +1,131 @@
+{
+  "measurement_id": "5477d505-114e-49e5-a821-c5ca370a452e",
+  "timestamp": "2026-06-03T07:29:47.376174+00:00",
+  "target_label": "google",
+  "target_domain": "generativelanguage.googleapis.com",
+  "source_machine": "Chunhua",
+  "source_platform": "Windows-10-10.0.19045-SP0",
+  "origin_type": "vpn",
+  "vpn_provider": "protonvpn",
+  "vpn_region": "br",
+  "campaign_id": "20260603T072127Z_br_protonvpn",
+  "round_id": "20260603T072127Z_br_protonvpn-round-0018",
+  "notes": "fast ProtonVPN Brazil collection",
+  "source_public_ip": {
+    "ip": "146.70.98.117",
+    "error": null
+  },
+  "dns": {
+    "domain": "generativelanguage.googleapis.com",
+    "ips": [
+      "216.239.32.223",
+      "216.239.34.223",
+      "216.239.36.223",
+      "216.239.38.223"
+    ],
+    "method": "socket.getaddrinfo",
+    "error": null
+  },
+  "traceroute": {
+    "domain": "generativelanguage.googleapis.com",
+    "command": "tracert -d -h 12 -w 1000 generativelanguage.googleapis.com",
+    "hops": [
+      {
+        "hop_num": 1,
+        "ip": "10.2.0.1",
+        "hostname": null,
+        "rtt_ms": 79.0
+      },
+      {
+        "hop_num": 2,
+        "ip": "146.70.98.97",
+        "hostname": null,
+        "rtt_ms": 79.0
+      },
+      {
+        "hop_num": 3,
+        "ip": "176.10.83.2",
+        "hostname": null,
+        "rtt_ms": 79.0
+      },
+      {
+        "hop_num": 4,
+        "ip": "217.138.223.169",
+        "hostname": null,
+        "rtt_ms": 79.0
+      },
+      {
+        "hop_num": 5,
+        "ip": "206.41.108.12",
+        "hostname": null,
+        "rtt_ms": 77.0
+      },
+      {
+        "hop_num": 6,
+        "ip": "142.250.61.57",
+        "hostname": null,
+        "rtt_ms": 79.0
+      },
+      {
+        "hop_num": 7,
+        "ip": "142.251.66.77",
+        "hostname": null,
+        "rtt_ms": 79.0
+      },
+      {
+        "hop_num": 8,
+        "ip": "216.239.38.223",
+        "hostname": null,
+        "rtt_ms": 78.0
+      }
+    ],
+    "reached_destination": false,
+    "error": null
+  },
+  "tcp_rtt": {
+    "host": "216.239.32.223",
+    "port": 443,
+    "rtt_ms": 74.929,
+    "all_rtts_ms": [
+      74.929,
+      79.751,
+      84.24
+    ],
+    "error": null
+  },
+  "tls_cert": {
+    "domain": "generativelanguage.googleapis.com",
+    "subject": {
+      "commonName": "upload.video.google.com"
+    },
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Google Trust Services",
+      "commonName": "WR2"
+    },
+    "san": [
+      "upload.video.google.com",
+      "*.clients.google.com",
+      "*.docs.google.com",
+      "*.drive.google.com",
+      "*.gdata.youtube.com",
+      "*.googleapis.com",
+      "*.photos.google.com",
+      "*.youtube-3rd-party.com",
+      "upload.google.com",
+      "*.upload.google.com",
+      "upload.youtube.com",
+      "*.upload.youtube.com",
+      "uploads.stage.gdata.youtube.com",
+      "bg-call-donation.goog",
+      "bg-call-donation-alpha.goog",
+      "bg-call-donation-canary.goog",
+      "bg-call-donation-dev.goog"
+    ],
+    "not_before": "May  7 15:53:08 2026 GMT",
+    "not_after": "Jul 30 15:53:07 2026 GMT",
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "error": null
+  }
+}

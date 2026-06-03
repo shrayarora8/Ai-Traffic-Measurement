@@ -1,0 +1,102 @@
+{
+  "measurement_id": "ccf59025-2df2-448e-9c54-47e6d6b2d561",
+  "timestamp": "2026-06-03T07:32:03.683822+00:00",
+  "target_label": "openai",
+  "target_domain": "api.openai.com",
+  "source_machine": "Chunhua",
+  "source_platform": "Windows-10-10.0.19045-SP0",
+  "origin_type": "vpn",
+  "vpn_provider": "protonvpn",
+  "vpn_region": "br",
+  "campaign_id": "20260603T072127Z_br_protonvpn",
+  "round_id": "20260603T072127Z_br_protonvpn-round-0023",
+  "notes": "fast ProtonVPN Brazil collection",
+  "source_public_ip": {
+    "ip": "146.70.98.117",
+    "error": null
+  },
+  "dns": {
+    "domain": "api.openai.com",
+    "ips": [
+      "162.159.140.245",
+      "172.66.0.243"
+    ],
+    "method": "socket.getaddrinfo",
+    "error": null
+  },
+  "traceroute": {
+    "domain": "api.openai.com",
+    "command": "tracert -d -h 12 -w 1000 api.openai.com",
+    "hops": [
+      {
+        "hop_num": 1,
+        "ip": "10.2.0.1",
+        "hostname": null,
+        "rtt_ms": 80.0
+      },
+      {
+        "hop_num": 2,
+        "ip": "146.70.98.97",
+        "hostname": null,
+        "rtt_ms": 90.0
+      },
+      {
+        "hop_num": 3,
+        "ip": "176.10.83.2",
+        "hostname": null,
+        "rtt_ms": 75.0
+      },
+      {
+        "hop_num": 4,
+        "ip": "206.41.108.18",
+        "hostname": null,
+        "rtt_ms": 85.0
+      },
+      {
+        "hop_num": 5,
+        "ip": "108.162.211.26",
+        "hostname": null,
+        "rtt_ms": 75.0
+      },
+      {
+        "hop_num": 6,
+        "ip": "172.66.0.243",
+        "hostname": null,
+        "rtt_ms": 76.0
+      }
+    ],
+    "reached_destination": true,
+    "error": null
+  },
+  "tcp_rtt": {
+    "host": "162.159.140.245",
+    "port": 443,
+    "rtt_ms": 79.413,
+    "all_rtts_ms": [
+      79.413,
+      80.374,
+      80.97
+    ],
+    "error": null
+  },
+  "tls_cert": {
+    "domain": "api.openai.com",
+    "subject": {
+      "commonName": "api.openai.com"
+    },
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Google Trust Services",
+      "commonName": "WE1"
+    },
+    "san": [
+      "api.openai.com",
+      "*.api.openai.com"
+    ],
+    "not_before": "May 10 01:13:14 2026 GMT",
+    "not_after": "Aug  8 02:13:12 2026 GMT",
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "error": null
+  }
+}

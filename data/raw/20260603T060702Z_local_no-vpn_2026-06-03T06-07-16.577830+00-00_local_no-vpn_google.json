@@ -1,0 +1,166 @@
+{
+  "measurement_id": "29a9584b-d789-468d-b0ab-08e35ebd0945",
+  "timestamp": "2026-06-03T06:07:16.577830+00:00",
+  "target_label": "google",
+  "target_domain": "generativelanguage.googleapis.com",
+  "source_machine": "Chunhua",
+  "source_platform": "Windows-10-10.0.19045-SP0",
+  "origin_type": "local",
+  "vpn_provider": "no-vpn",
+  "vpn_region": "local",
+  "campaign_id": "20260603T060702Z_local_no-vpn",
+  "round_id": "20260603T060702Z_local_no-vpn-round-0001",
+  "notes": "fast extended local baseline collection",
+  "source_public_ip": {
+    "ip": "73.90.193.144",
+    "error": null
+  },
+  "dns": {
+    "domain": "generativelanguage.googleapis.com",
+    "ips": [
+      "142.251.214.42",
+      "142.251.218.106",
+      "142.251.218.138",
+      "142.251.218.170",
+      "142.251.218.202",
+      "142.251.218.234",
+      "142.251.218.74",
+      "142.251.219.10",
+      "142.251.219.138",
+      "142.251.219.170",
+      "142.251.219.42",
+      "2001:4860:4802:32::223",
+      "2001:4860:4802:34::223",
+      "2001:4860:4802:36::223",
+      "2001:4860:4802:38::223"
+    ],
+    "method": "socket.getaddrinfo",
+    "error": null
+  },
+  "traceroute": {
+    "domain": "generativelanguage.googleapis.com",
+    "command": "tracert -d -h 12 -w 1000 generativelanguage.googleapis.com",
+    "hops": [
+      {
+        "hop_num": 1,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 2.0
+      },
+      {
+        "hop_num": 2,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 14.0
+      },
+      {
+        "hop_num": 3,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 13.0
+      },
+      {
+        "hop_num": 4,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 12.0
+      },
+      {
+        "hop_num": 5,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": null
+      },
+      {
+        "hop_num": 6,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 16.0
+      },
+      {
+        "hop_num": 7,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 17.0
+      },
+      {
+        "hop_num": 8,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 18.0
+      },
+      {
+        "hop_num": 9,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 16.0
+      },
+      {
+        "hop_num": 10,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 14.0
+      },
+      {
+        "hop_num": 11,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 17.0
+      },
+      {
+        "hop_num": 12,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": 16.0
+      }
+    ],
+    "reached_destination": false,
+    "error": null
+  },
+  "tcp_rtt": {
+    "host": "142.251.214.42",
+    "port": 443,
+    "rtt_ms": 26.099,
+    "all_rtts_ms": [
+      29.603,
+      26.099,
+      28.335
+    ],
+    "error": null
+  },
+  "tls_cert": {
+    "domain": "generativelanguage.googleapis.com",
+    "subject": {
+      "commonName": "upload.video.google.com"
+    },
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Google Trust Services",
+      "commonName": "WR2"
+    },
+    "san": [
+      "upload.video.google.com",
+      "*.clients.google.com",
+      "*.docs.google.com",
+      "*.drive.google.com",
+      "*.gdata.youtube.com",
+      "*.googleapis.com",
+      "*.photos.google.com",
+      "*.youtube-3rd-party.com",
+      "upload.google.com",
+      "*.upload.google.com",
+      "upload.youtube.com",
+      "*.upload.youtube.com",
+      "uploads.stage.gdata.youtube.com",
+      "bg-call-donation.goog",
+      "bg-call-donation-alpha.goog",
+      "bg-call-donation-canary.goog",
+      "bg-call-donation-dev.goog"
+    ],
+    "not_before": "May  7 15:53:08 2026 GMT",
+    "not_after": "Jul 30 15:53:07 2026 GMT",
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "error": null
+  }
+}

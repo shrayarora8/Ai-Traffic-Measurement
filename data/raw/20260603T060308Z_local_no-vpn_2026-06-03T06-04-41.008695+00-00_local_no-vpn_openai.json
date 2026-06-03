@@ -1,0 +1,126 @@
+{
+  "measurement_id": "1c11223b-0bd5-4dd9-b55a-2c3ae6c3c510",
+  "timestamp": "2026-06-03T06:04:41.008695+00:00",
+  "target_label": "openai",
+  "target_domain": "api.openai.com",
+  "source_machine": "Chunhua",
+  "source_platform": "Windows-10-10.0.19045-SP0",
+  "origin_type": "local",
+  "vpn_provider": "no-vpn",
+  "vpn_region": "local",
+  "campaign_id": "20260603T060308Z_local_no-vpn",
+  "round_id": "20260603T060308Z_local_no-vpn-round-0002",
+  "notes": "extended local baseline collection",
+  "source_public_ip": {
+    "ip": "73.90.193.144",
+    "error": null
+  },
+  "dns": {
+    "domain": "api.openai.com",
+    "ips": [
+      "162.159.140.245",
+      "172.66.0.243"
+    ],
+    "method": "socket.getaddrinfo",
+    "error": null
+  },
+  "traceroute": {
+    "domain": "api.openai.com",
+    "command": "tracert -d -h 30 -w 5000 api.openai.com",
+    "hops": [
+      {
+        "hop_num": 1,
+        "ip": "10.0.0.1",
+        "hostname": null,
+        "rtt_ms": 1.0
+      },
+      {
+        "hop_num": 2,
+        "ip": "10.22.246.2",
+        "hostname": null,
+        "rtt_ms": 14.0
+      },
+      {
+        "hop_num": 3,
+        "ip": "162.151.3.25",
+        "hostname": null,
+        "rtt_ms": 13.0
+      },
+      {
+        "hop_num": 4,
+        "ip": "162.151.165.161",
+        "hostname": null,
+        "rtt_ms": 12.0
+      },
+      {
+        "hop_num": 5,
+        "ip": "96.216.198.77",
+        "hostname": null,
+        "rtt_ms": 15.0
+      },
+      {
+        "hop_num": 6,
+        "ip": "96.110.41.97",
+        "hostname": null,
+        "rtt_ms": 12.0
+      },
+      {
+        "hop_num": 7,
+        "ip": "96.110.32.254",
+        "hostname": null,
+        "rtt_ms": 19.0
+      },
+      {
+        "hop_num": 8,
+        "ip": null,
+        "hostname": null,
+        "rtt_ms": null
+      },
+      {
+        "hop_num": 9,
+        "ip": "172.68.188.107",
+        "hostname": null,
+        "rtt_ms": 10.0
+      },
+      {
+        "hop_num": 10,
+        "ip": "162.159.140.245",
+        "hostname": null,
+        "rtt_ms": 17.0
+      }
+    ],
+    "reached_destination": false,
+    "error": null
+  },
+  "tcp_rtt": {
+    "host": "162.159.140.245",
+    "port": 443,
+    "rtt_ms": 15.858,
+    "all_rtts_ms": [
+      23.172,
+      15.858,
+      27.902
+    ],
+    "error": null
+  },
+  "tls_cert": {
+    "domain": "api.openai.com",
+    "subject": {
+      "commonName": "api.openai.com"
+    },
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Google Trust Services",
+      "commonName": "WE1"
+    },
+    "san": [
+      "api.openai.com",
+      "*.api.openai.com"
+    ],
+    "not_before": "May 10 01:13:14 2026 GMT",
+    "not_after": "Aug  8 02:13:12 2026 GMT",
+    "tls_version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "error": null
+  }
+}
