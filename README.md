@@ -18,13 +18,56 @@ source venv/bin/activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Run a single measurement (no VPN needed)
-python collector.py
+# 4. Run a single measurement and label the current network origin
+python collector.py --vpn-provider no-vpn --vpn-region local
 
-# 5. Check results
+# 5. Run one prompted pass through all configured VPN provider/region pairs
+python run_campaign.py --matrix
+
+# 6. Check results
 ls data/raw/
 cat data/raw/*.json | python -m json.tool
 ```
+
+## Manual VPN Campaign Collection
+
+The project does not control the VPN client directly. Connect the VPN manually first, then start a campaign with the matching provider and region labels.
+
+Run one smoke-test round after each VPN switch:
+
+```bash
+python run_campaign.py --vpn-provider expressvpn --vpn-region us --rounds 1
+```
+
+Run the full 72-hour campaign for the current VPN exit point:
+
+```bash
+python run_campaign.py --vpn-provider expressvpn --vpn-region us
+```
+
+Repeat the campaign for all planned network origins:
+
+```bash
+python run_campaign.py --vpn-provider expressvpn --vpn-region us
+python run_campaign.py --vpn-provider expressvpn --vpn-region de
+python run_campaign.py --vpn-provider expressvpn --vpn-region jp
+python run_campaign.py --vpn-provider expressvpn --vpn-region br
+
+python run_campaign.py --vpn-provider protonvpn --vpn-region us
+python run_campaign.py --vpn-provider protonvpn --vpn-region de
+python run_campaign.py --vpn-provider protonvpn --vpn-region jp
+python run_campaign.py --vpn-provider protonvpn --vpn-region br
+```
+
+Or run a prompted matrix pass. The script will ask you to connect each
+ExpressVPN/ProtonVPN exit in US, Germany, Japan, and Brazil, then it will
+measure OpenAI, Google Gemini, and Anthropic for the active VPN context:
+
+```bash
+python run_campaign.py --matrix
+```
+
+Each round measures OpenAI, Google Gemini, and Anthropic, then writes one JSON file per provider to `data/raw/`. Campaign metadata is written to `data/campaigns/`.
 
 ## Project Structure
 
@@ -33,7 +76,7 @@ cat data/raw/*.json | python -m json.tool
 | `config.py` | All configuration (targets, regions, intervals) |
 | `collector.py` | Core measurement script (DNS, traceroute, RTT, TLS) |
 | `vpn_control.py` | VPN connection automation (TODO) |
-| `run_campaign.py` | 72-hour measurement campaign loop (TODO) |
+| `run_campaign.py` | 72-hour measurement campaign loop for manually selected VPN origins |
 | `analyzer.py` | Post-collection analysis and visualization (TODO) |
 | `concepts_guide.md` | Networking concepts reference |
 
@@ -50,7 +93,8 @@ Each measurement round captures four types of network data per AI provider:
 
 - [x] Project structure
 - [x] Configuration
-- [x] Collector (all 4 measurements)
+- [x] Collector (all 4 measurements + VPN/region labels)
+- [x] Manual matrix collection for four regions x two VPN types
 - [ ] VPN controller
-- [ ] Campaign runner (72-hour loop)
+- [x] Campaign runner (72-hour loop)
 - [ ] Analyzer (geolocation + jurisdictional exposure)
